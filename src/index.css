@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.shopping-container{
+  text-align: left;
+}
+
+.nav {
+  text-align: left;
+  padding: 15px 5px 5px 5px;
+  border-bottom: 2px solid lightblue;
+}
+
+.nav-tab-item {
+  margin-right:15px;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid lightcoral;
+}
+
+.items-list {
+  padding: 10px 15px 15px 15px;
+}
+
+.item {
+  padding: 5px;
+  border-bottom: 2px solid #ccc;
+}
+
+.avatar-block {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.info-block {
+  display: inline-block;
+}
+
+.item-logo {
+  border:1px solid #ccc;
+  width: 65px;
+  height: 65px;
+}
