@@ -54,3 +54,7 @@ code {
   width: 65px;
   height: 65px;
 }
+
+.item-action {
+  text-align: right;
+}

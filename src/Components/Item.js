@@ -22,14 +22,14 @@ const ItemInfo = ({item}) => (
     </>
 )
 
-const Item = ({ item, childAction }) => (
+const Item = ({ item , children}) => (
     <div className="item row">
         <div className="col-sm-8">
             <ItemInfo item={item}/>
         </div>
-        <div className="col-sm-4">
+        <div className="col-sm-4 item-action">
             <Price price={item.price} />
-            {childAction}
+            {children}
         </div>
     </div>
 )

@@ -1,9 +1,22 @@
 import Item from './Item'
 
-const CartList = ({items}) => (
+const ManipulateNumber = ({item, increaseItem, decreaseItem}) => (
+    <div>
+        <button onClick={decreaseItem}>-</button>
+        {item.number}
+        <button onClick={increaseItem}>+</button>
+    </div>
+)
+
+const CartList = ({items, increaseItem, decreaseItem}) => (
     <div className="items-list">Cart Lists{ 
-        items.map(item => (
-        <Item key={item.id} item={item}></Item>
+        items.map((item, index) => (
+        <Item key={item.id} item={item}>
+            <ManipulateNumber 
+                item={item} 
+                increaseItem={() => increaseItem(index)} 
+                decreaseItem={() => decreaseItem(index)} />
+        </Item>
     )) }</div>
 )
 
